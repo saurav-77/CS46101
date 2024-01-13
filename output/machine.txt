@@ -1,0 +1,18 @@
+Laptop-1 details are: 
+Company: HP
+Processor: Intel Core i5 13th Gen
+RAM: 16GB
+SSD: 512GB
+
+Laptop-2 details are: 
+Company: Asus
+Processor: Amd Ryzen 7 5800H
+RAM: 16GB
+SSD: 512GB
+
+Laptop-3 details are: 
+Company: Acer
+Processor: Intel Core i3 12th Gen
+RAM: 8GB
+SSD: 512GB
+
