@@ -8,38 +8,41 @@ public class Exp2Solution {
         double greMarks = sc.nextDouble();
         System.out.print("Enter your TOEFL marks(%): ");
         double toeflMarks = sc.nextDouble();
-        final String goodNews = "Congratulations! You are alloted a seat in following university and department";
-        final String sadNews = "Sorry! No seat alloted.";
-        final String uNameFirst = "University Name: Oxford University";
-        final String uNameSecond = "University Name: MIT"; final String dn = "Department Name: ";
-        final String cse = dn + "Computer Sc. and Engg.";
-        final String ec = dn + "Electronics Engg."; final String che = dn + "Chemical Engg.";
-        final String ee = dn + "Electrical Engg."; final String ce = dn + "Civil Engg.";
+        String uNameFirst = "University Name: Oxford University";
+        String uNameSecond = "University Name: MIT";
+        String dn = "Department Name: ";
+        String cse = "Computer Sc. and Engg.";
+        String ec = "Electronics Engg.";
+        String che = "Chemical Engg.";
+        String ee = "Electrical Engg.";
+        String ce = "Civil Engg.";
+        String goodNews = "Congratulations! You are alloted a seat in following university and department";
+        String sadNews = "Sorry! No seat alloted.";
         if (greMarks > 70) {
             if (toeflMarks >= 70) {
-                System.out.println(goodNews + "\n" + uNameFirst + "\n" + cse);
+                System.out.println(goodNews + "\n" + uNameFirst + "\n" + dn + cse);
             } else if (toeflMarks >= 60) {
-                System.out.println(goodNews + "\n" + uNameFirst + "\n" + ec);
+                System.out.println(goodNews + "\n" + uNameFirst + "\n" + dn + ec);
             } else if (toeflMarks >= 50) {
-                System.out.println(goodNews + "\n" + uNameFirst + "\n" + ee);
-            } else  {
+                System.out.println(goodNews + "\n" + uNameFirst + "\n" + dn + ee);
+            } else {
                 System.out.println(sadNews);
             }
         } else if (greMarks >= 60) {
             if (toeflMarks >= 50) {
-                System.out.println(goodNews + "\n" + uNameSecond + "\n" + cse);
+                System.out.println(goodNews + "\n" + uNameSecond + "\n" + dn + cse);
             } else {
                 System.out.println(sadNews);
             }
         } else if (greMarks > 50) {
             if (toeflMarks >= 50) {
-                System.out.println(goodNews + "\n" + uNameSecond + "\n" + che);
+                System.out.println(goodNews + "\n" + uNameSecond + "\n" + dn + che);
             } else {
                 System.out.println(sadNews);
             }
         } else if (greMarks >= 50) {
             if (toeflMarks >= 50) {
-                System.out.println(goodNews + "\n" + uNameSecond + "\n" + ce);
+                System.out.println(goodNews + "\n" + uNameSecond + "\n" + dn + ce);
             } else {
                 System.out.println(sadNews);
             }
